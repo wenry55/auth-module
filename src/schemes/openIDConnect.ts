@@ -34,6 +34,12 @@ const DEFAULTS: SchemePartialOptions<OpenIDConnectSchemeOptions> = {
     prefix: '_id_token.',
     expirationPrefix: '_id_token_expiration.'
   },
+  refreshToken: {
+    property: "refresh_token",
+    maxAge: 60 * 60 * 24 * 30,
+    prefix: "_refresh_token.",
+    expirationPrefix: "_refresh_token_expiration."
+  },
   codeChallengeMethod: 'S256'
 }
 
